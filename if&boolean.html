@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+  <body>
+    <!--
+      using the boolean and if statement and use it to build rock-paper scissor game
+      Booleans re another type of value in value in js (number and string being the other ones).Boolean re just two true or false.
+      the purpose of boolean value is to reprresent is something is true or false,e.g w ecna compare two number 5<3.....this true and if we console.log the code we get the boolean value in the console which is false and when we do other comparison we get the answer to be true or false
+      The synatx for booleans re:
+      to create a boolean we just write true ot false not 'true nor 'false' cux this is already a string.
+      one way to create aboolean is to compare two number < ot > this < and > is acomparison operator and there re many other comparison operator we can use
+      1)<:less than
+      2)>: greater than
+      3)>=: greater than or equal to
+      4)<=: less than or equal to
+      5)===: equal to
+      6)!==: NOT EQUAL TO
+      JS HAVE SOMTHING SPECIAL IT HAS TWO WAYS TO CHECK IF TWO VALUE RE EQUAL :
+      the treble equall===  and the double equal ==;
+      the diffrence is that double equal trys to convert both value into same type e.g ....5 =='5.00'this will be equal(true) even when one is a string and the other is number.
+      IT not a good idea for string to be equal to number so we use tribble equla to do comparison....this also qppy to not equla which is !=
+      In order of opeartion comparison operatprs has a lower priority thtan maths.
+      Now Let treat if statemnet
+      if statement let us write multiple groups of code and then decide which code to run.
+      if(true){
+        console.log('hello')
+      }
+      btw the round braclet we gonna  to put boolean value like true and in btw the curly bracket we going to put some code e.g console.log......
+      the if statement worl in way that if the boolean value is true w
+      it going to run the code in the curly barcket and if it false it not going to runs.
+      if statemnt have another useful feature called 'else'
+      we put it at the end of if and then open a curly bracket to input some code this code inside the else will run when the if statement is false.
+      WE have another feature called else if/.else if let us add naithe braches to our if statement
+      else if(){
+
+      }
+      btw the round bracket we can have another condition
+      e.g if a person is almost enough to drive we can have another braches for it
+    -->
+    <script>
+      console.log(5<3);
+      console.log(3<5);
+      console.log(typeof true);//this is boolean
+      console.log(typeof 'true')  //this is a string
+      console.log(5 =='5.00');// this convert the value into same datatype and the anser will be equal 
+      console.log(5==='5.00');// this false cuz no coversion due to the use of tribble equal signs 
+      console.log(3>5-5);// this true cuz comparison opeartor have a lower priority than manth
+
+      if(true){
+        console.log('hello')//here it will run the code cuz it true
+      }
+      if(false){
+        console.log('hello')//here it wont run it cuz it false
+      }else{
+        console.log('no hello(else)')
+      }
+
+      //let do a practical example
+      //let check if a person is old enougn to drive
+      //the person age is 30 years old and let pretend the driving age is 16
+      if(30 >= 16 ){
+        console.log('you can drive')
+      }else{
+        console.log('you cant drive')
+      };
+      //the () contains the condition and the {} contain the braches(which re the code to be ran). in abranch if we only have one branche the curly bracket is optional
+      //but in a two or more line of code the curlu bracket is mandatory
+      if(15 >= 16){
+        console.log('you can drive');//if true run this code if not go to the next line
+      }else if( 15>=14){
+        console.log('Almost there')//if true run and stop here if not go to the next line
+      }else{
+        console.log('you cant drive');//run this is the above condition is false
+      }
+      if(30 >= 16)
+      console.log('it works without the curly bracket')
+
+      // we can use variable also in if staement
+      const age=16;
+      if( age >=16){
+        console.log('you can drive')
+
+      }else if(age >=14){
+        console.log('you re almost there')
+
+      }else{
+        console.log('you cant drive')
+      }
+    </script>
+  </body>
+</html>
