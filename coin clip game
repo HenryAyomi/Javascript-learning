@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip Game</title>
+  </head>
+  <body>
+    <!--use const not var....i just use var so that i dont see the error message while using const or let-->
+    <h2>Coin Flipping Game</h2>
+    <button onclick="
+      var randomNumber=Math.random();
+      var computerMove=randomNumber < 0.5 ? 'Head':'Tail';
+      //console.log(computerMove);
+      var result;
+      if(computerMove === 'Head'){
+        result='You Win'
+      }else{
+        result='You Lose'
+      }
+      alert(`You guessed Head Computer flip ${computerMove}.${result}`);
+      ">Head</button>
+
+    <button onclick="
+    var randomNumber=Math.random();
+    var computerMove=randomNumber < 0.5 ? 'Head':'Tail';
+    //console.log(computerMove);
+    var result;
+    computerMove === 'Head' ? result='You Lose':result='You Win';
+    alert(`You guessed Tail Computer flip ${computerMove}.${result}`)
+    ">Tail</button>
+  </body>
+</html>
