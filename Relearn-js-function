@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    
+    <button onclick="
+
+    //step 2,then copy this into function playGame which is in step 3
+    /*
+    const computerMove= pickAndriodmove();
+    
+
+    let result ='';
+    if(computerMove === 'Rock'){
+      result ='You Win'
+    }else if(computerMove === 'Paper'){
+      result = 'Tie'
+    }else if(computerMove === 'Scissors'){
+      result = 'You Lose'
+    }
+    alert(`You choose paper Android choose ${computerMove}.${result}`)
+    */
+    playgame('Paper')
+    ">Paper</button>
+    <button onclick="
+    playgame('Rock')
+    ">Rock</button>
+    <button onclick="
+    playgame('Scissors')
+    ">Scissors</button>
+    <script>
+   //step 3 
+   function playgame(yourMove){
+    const computerMove= pickAndriodmove();
+    
+
+    let result ='';
+    if(yourMove === 'Paper'){
+      if(computerMove === 'Rock'){
+      result ='You Win'
+    }else if(computerMove === 'Paper'){
+      result = 'Tie'
+    }else if(computerMove === 'Scissors'){
+      result = 'You Lose'
+    }
+    
+    
+
+   }else if(yourMove === 'Rock'){
+    if(computerMove === 'Rock'){
+      result = 'Tie'
+    }else if(computerMove === 'Paper'){
+      result = 'You Lose'
+    }else if(computerMove === 'Scissors'){
+      result = 'You Win';
+
+    }
+
+   }else if(yourMove === 'Scissors'){
+    if(computerMove === 'Rock'){
+      result = 'You Lose'
+    }else if(computerMove === 'Paper'){
+      result = 'You Win'
+    }else if(computerMove === 'Scissors'){
+      result = 'Tie'
+    }
+   }
+   alert(`You choose ${yourMove}. Android choose ${computerMove}.${result}`)
+    }/* we input this below code into playgame function with parameter yourmove  then do the if statement for the yourmove parameter
+    computerMove = pickAndriodmove()
+    if(computerMove === 'Rock'){
+      result ='You Win'
+    }else if(computerMove === 'Paper'){
+      result = 'Tie'
+    }else if(computerMove === 'Scissors'){
+      result = 'You Lose'
+    }
+    alert(`You choose paper Android choose ${computerMove}.${result}`)
+    
+
+   }
+   */
+
+   //step 1
+   function pickAndriodmove(){
+    let randomNumber = Math.random();
+    let computerMove;
+    if(randomNumber >= 0 && randomNumber < 1/3 ){
+      computerMove='Rock'
+    }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+      computerMove = 'Paper';
+    }else{
+      computerMove = 'Scissors';
+    }
+     return computerMove;
+   }
+  //  pickAndriodmove()
+
+    </script>
+  </body>
+</html>
