@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <button onclick="
+      taxCalculation(10000,0.2);
+      ">10000</button>
+    <script>
+      
+      function taxCalculation(amount,taxPercent = 0.1 ){
+        console.log(amount * taxPercent)
+      }
+
+      // taxCalculation(5000,0.5);
+      // taxCalculation(10000,0.2);
+      // taxCalculation(10000)
+      
+      const vtaxcalculation=function taxCalculation(amount,taxPercent = 0.1 ){
+        console.log(amount * taxPercent)
+      }
+      //taxCalculation(10,0.1)//we can't use the function name here cuz we have assigned a variable to it
+      vtaxcalculation(5000,0.2)//function expression 
+      //it when we assign a varibale to our function then use the varibale to call the function thta is inside it 
+      
+
+    
+     //function to add two varobales
+     const vadd=function add(x,y){
+      const result= x + y;
+      console.log(result) 
+      return vadd;
+     }
+     vadd(4,6)
+    
+    </script>
+  </body>
+</html>
